@@ -15,5 +15,5 @@ function deleteLast() {
 
 function calculate() {
     const display = document.getElementById('display');
-    display.value = eval(display.value);
+    display.value = eval(display.value.replace(/x/g, '*'));
 }
