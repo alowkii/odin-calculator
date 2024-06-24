@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #a5eaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator{
+    min-width: 20rem;
+    min-height: 30rem;
+    width: 20vw;
+    height: 50vh;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5%;
+    border: solid 1px black;
+    box-shadow: #7a6a6a 1px 1px 5px;
+}
+
+.display-box{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#display{
+    width: 85%;
+    height: 80%;
+    box-sizing: border-box;
+    border: solid 1px black;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    background-color: #9fffcf;
+    font-family: Orbitron, sans-serif;
+}
+
+.calculator > .button-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.calculator > .button-container > .row{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calculator > .button-container > .row > .btn{
+    width: 20%;
+    height: 80%;
+    border: none;
+    border-radius: 5%;
+    background-color: #f0f0f0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.calculator > .button-container > .row > .clear-btn{
+    background-color: #ffcccc;
+}
+
+.calculator > .button-container > .row > .btn:hover{
+    background-color: #cacaca;
+}
+
+.calculator > .button-container > .row > .btn:active{
+    background-color: #afafaf;
+}
+
+.calculator > .button-container > .row > .clear-btn:hover{
+    background-color: #ffaaaa;
+}
+
+.calculator > .button-container > .row > .clear-btn:active{
+    background-color: #ff4141;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    left: 1rem;
+    top: 1rem;
+}
+
+footer{
+    position: absolute;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: none;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: black;
+}
