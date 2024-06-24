@@ -15,5 +15,10 @@ function deleteLast() {
 
 function calculate() {
     const display = document.getElementById('display');
-    display.value = eval(display.value.replace(/x/g, '*'));
+    try {
+        const sanitizedValue = display.value.replace(/x/g, '*');
+        display.value = eval(sanitizedValue);
+    } catch (e) {
+        display.value = 'Error';
+    }
 }
