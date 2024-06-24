@@ -16,8 +16,7 @@ function deleteLast() {
 function calculate() {
     const display = document.getElementById('display');
     try {
-        const sanitizedValue = display.value.replace(/x/g, '*');
-        display.value = eval(sanitizedValue);
+        display.value = eval(display.value);
     } catch (e) {
         display.value = 'Error';
     }
